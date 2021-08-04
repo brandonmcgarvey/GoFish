@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Diagnostics;
 
 namespace GoFish
 {
@@ -53,7 +50,7 @@ namespace GoFish
         /// Take random index number and creates a random card object.
         /// Remove random card (index) from deck copy and adds it to the Deck.
         /// </summary>
-        public void Shuffle()
+        public Deck Shuffle()
         {
             List<Card> deckCopy = new List<Card>(this);
             this.Clear();
@@ -64,6 +61,7 @@ namespace GoFish
                 deckCopy.RemoveAt(index);
                 this.Add(randomCard);
             }
+            return this;
         }
 
         public void Sort()

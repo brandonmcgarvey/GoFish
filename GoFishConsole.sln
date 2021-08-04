@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoFish", "GoFishConsole\GoFish.csproj", "{D0638FB4-306A-457B-A4F7-A7A971670F22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoFish", "GoFishConsole\GoFish.csproj", "{D0638FB4-306A-457B-A4F7-A7A971670F22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoFishUnitTtest", "GoFish\GoFishUnitTtest.csproj", "{BEEB2DD2-5143-4F8D-944C-8085B23E4CFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoFishUnitTest", "GoFish\GoFishUnitTest.csproj", "{BEEB2DD2-5143-4F8D-944C-8085B23E4CFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

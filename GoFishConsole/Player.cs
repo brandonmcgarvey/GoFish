@@ -107,24 +107,20 @@ namespace GoFish
         public Values RandomValueFromHand() => hand.OrderBy(card => card.Value)
             .Select(card => card.Value)
             .Skip(Random.Next(hand.Count()))
-            .First();
-        /*public Values RandomValueFromHand() => hand.OrderBy(card => card.Value)
-            .Select(card => card.Value)
-            .Skip(Random.Next(hand.Count()))            
-            .First();*/
+            .First();        
         public override string ToString() => Name;
 
         /// <summary>
         /// Sorts cards in hand first by value and then suit.
         /// </summary>
-        private void SortHand()
+        public void SortHand()
         {
             List<Card> sortedHand = new List<Card>(hand);
             sortedHand.Sort(new CompareByValue());
-            hand.Clear();
-            foreach (Card card in sortedHand) hand.Add(card);
+            hand = sortedHand;
+            //hand.Clear();
+            //foreach (Card card in sortedHand) hand.Add(card);
         }
-
         public void ClearHand() => hand.Clear();        
     }
 }
